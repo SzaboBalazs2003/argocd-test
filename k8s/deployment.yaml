@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: ghcr.io/YOUR_GITHUB_USERNAME/spring-boot-k8s:latest
+        image: ghcr.io/szabobalazs2003/spring-boot-k8s:latest
         ports:
         - containerPort: 8080
