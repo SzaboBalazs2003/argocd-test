@@ -17,5 +17,3 @@ spec:
         image: ghcr.io/szabobalazs2003/spring-boot-k8s:latest
         ports:
         - containerPort: 8080
-      imagePullSecrets:
-        name: ghcr-login-secret
