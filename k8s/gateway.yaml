@@ -30,4 +30,3 @@ spec:
     - destination:
         port:
           number: 8000
-        host: spring-boot-app-2
