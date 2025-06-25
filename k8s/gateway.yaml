@@ -31,3 +31,12 @@ spec:
         host: spring-boot-app-2.app2.svc.cluster.local
         port:
           number: 8000
+
+---
+
+apiVersion: networking.istio.io/v1
+kind: DestinationRule
+metadata:
+  name: spring-boot-app-2
+spec:
+  host: spring-boot-app-2.app2.svc.cluster.local
