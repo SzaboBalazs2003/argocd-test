@@ -22,7 +22,7 @@ metadata:
   namespace: app2
 spec:
   hosts:
-  - "*"
+  - spring-boot-app-2.app2.svc.cluster.local
   gateways:
   - ingress-gateway
   http:
