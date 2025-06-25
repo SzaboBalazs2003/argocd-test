@@ -19,6 +19,7 @@ apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:
   name: app2
+  namespace: app2
 spec:
   hosts:
   - "*"
@@ -29,4 +30,4 @@ spec:
     - destination:
         port:
           number: 8000
-        host: app2
+        host: spring-boot-app-2
