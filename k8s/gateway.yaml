@@ -13,31 +13,4 @@ spec:
       protocol: HTTP
     hosts:
     - "*"
-
----
-
-apiVersion: networking.istio.io/v1
-kind: VirtualService
-metadata:
-  name: spring-boot-app-2
-  namespace: app2
-spec:
-  hosts:
-  - spring-boot-app-2.app2.svc.cluster.local
-  gateways:
-  - istio-system/ingress-gateway
-  http:
-    route:
-    - destination:
-        host: spring-boot-app-2.app2.svc.cluster.local
-        port:
-          number: 8000
-
----
-
-apiVersion: networking.istio.io/v1
-kind: DestinationRule
-metadata:
-  name: spring-boot-app-2
-spec:
-  host: spring-boot-app-2.app2.svc.cluster.local
+    
