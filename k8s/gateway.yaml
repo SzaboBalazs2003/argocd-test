@@ -2,6 +2,7 @@ apiVersion: networking.istio.io/v1
 kind: Gateway
 metadata:
   name: ingress-gateway
+  namespace: istio-system
 spec:
   selector:
     istio: ingressgateway
@@ -24,7 +25,7 @@ spec:
   hosts:
   - spring-boot-app-2.app2.svc.cluster.local
   gateways:
-  - ingress-gateway
+  - istio-system/ingress-gateway
   http:
     route:
     - destination:
