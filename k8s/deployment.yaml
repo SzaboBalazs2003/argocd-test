@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spring-boot-app-2
+  namespace: app2
 spec:
   replicas: 1
   selector:
