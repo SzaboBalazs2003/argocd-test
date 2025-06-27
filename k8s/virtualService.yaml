@@ -12,6 +12,8 @@ spec:
     - match:
         - uri:
             prefix: /app2
+      rewrite:
+        uri: /
       route:
         - destination:
             host: spring-boot-app-2.app2.svc.cluster.local
