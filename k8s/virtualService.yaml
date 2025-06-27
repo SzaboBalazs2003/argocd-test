@@ -5,10 +5,12 @@ metadata:
   namespace: app2
 spec:
   hosts:
-  - spring-boot-app-2.app2.svc.cluster.local
+  - "*"
+  gateways:
+  - istio-system/ingress-gateway
   http:
   - route:
     - destination:
         host: spring-boot-app-2.app2.svc.cluster.local
         port:
-          number: 8000
+          number: 8081
