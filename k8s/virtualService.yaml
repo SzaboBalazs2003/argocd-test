@@ -11,7 +11,9 @@ spec:
   http:
     - match:
         - uri:
-            prefix: /app2
+            prefix: /app2/
+        - uri:
+            exact: /app2
       rewrite:
         uri: /
       route:
