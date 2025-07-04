@@ -5,7 +5,7 @@ metadata:
   namespace: app1
 spec:
   hosts:
-    - "*"
+    - app1.demo.hu
   gateways:
     - istio-system/ingress-gateway
   http:
