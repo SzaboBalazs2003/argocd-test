@@ -5,17 +5,13 @@ metadata:
   namespace: app1
 spec:
   hosts:
-    - "*"
+    - app1.demo.hu
   gateways:
     - istio-system/ingress-gateway
   http:
     - match:
         - uri:
-            prefix: /app1/
-        - uri:
-            exact: /app1
-      rewrite:
-        uri: /
+            prefix: /
       route:
         - destination:
             host: spring-boot-app.app1.svc.cluster.local
