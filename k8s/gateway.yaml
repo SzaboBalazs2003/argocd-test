@@ -13,5 +13,6 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "*"
+    - app2.demo.hu
+    - app1.demo.hu
     
