@@ -8,6 +8,7 @@ spec:
     - app1.demo.hu
   gateways:
     - istio-system/ingress-gateway
+    - mesh
   http:
     - match:
         - uri:
