@@ -17,3 +17,11 @@ spec:
         image: ghcr.io/szabobalazs2003/spring-boot-k8s:latest
         ports:
         - containerPort: 8080
+      - name: traffic-simulator
+        image: curlimages/curl
+        command: ["/bin/sh", "-c"]
+        args:
+          - while true; do
+              curl http://spring-boot-app-2.app2.svc.cluster.local:8081/ping;
+              sleep 60;
+            done
