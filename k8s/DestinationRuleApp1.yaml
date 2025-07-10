@@ -4,7 +4,7 @@ metadata:
   name: spring-boot-app
   namespace: app2
 spec:
-  host: spring-boot-app.default.svc.cluster.local
+  host: spring-boot-app.app1.svc.cluster.local
   trafficPolicy:
     tls:
-      mode: DISABLE 
+      mode: DISABLE
