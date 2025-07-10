@@ -22,6 +22,6 @@ spec:
         command: ["/bin/sh", "-c"]
         args:
           - while true; do
-              curl --retry 3 --retry-delay 2 --connect-timeout 5 http://spring-boot-app-2.app2.svc.cluster.local:8081/ping
+              curl --retry 3 --retry-delay 2 --connect-timeout 5 http://spring-boot-app-2.app2.svc.cluster.local:8081/ping;
               sleep 60;
             done
