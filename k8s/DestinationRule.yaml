@@ -1,7 +1,11 @@
 apiVersion: networking.istio.io/v1
 kind: DestinationRule
 metadata:
-  name: spring-boot-app
+  name: spring-boot-app-2
   namespace: app1
 spec:
-  host: spring-boot-app.default.svc.cluster.local
+  host: spring-boot-app-2.app2.svc.cluster.local
+  trafficPolicy:
+    tls:
+      mode: DISABLE
+
